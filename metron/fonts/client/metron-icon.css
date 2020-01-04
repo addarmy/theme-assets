@@ -1,0 +1,252 @@
+.card-header i {
+    vertical-align: 1px;
+    font-size: 1rem;
+    }
+
+    .section .section-header .section-header-breadcrumb {
+    flex-basis: 0;
+    }
+
+    .wizard-step-active {
+    cursor: pointer;
+    }
+    .btn-yellow {
+    background: linear-gradient(to right, #ffb822, #ffb822) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #ffb8229a;
+    margin-bottom: 16px;
+    }
+    .btn-weixin {
+    background: linear-gradient(to right, #00ae47, #00ae47) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #00ae479a;
+    margin-bottom: 16px;
+    }
+    .btn-alipay {
+    background: linear-gradient(to right, #029de3, #029de3) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #029de39a;
+    margin-bottom: 16px;
+    }
+    .btn-quantumult {
+    background: linear-gradient(to right, black, black) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.38);
+    margin-bottom: 16px;
+    }
+    .btn-shadowrocket {
+    background: linear-gradient(to right, #3671b9, #3671b9) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #3671b99a;
+    margin-bottom: 16px;
+    }
+    .btn-kitsunebi {
+    background: linear-gradient(to right, #f2885b, #e83c9a) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 4px #ff567885;
+    margin-bottom: 16px;
+    }
+    .btn-ssr {
+    background: linear-gradient(to right, #e780a3, #e780a3) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #e780a2b0;
+    margin-bottom: 16px;
+    }
+    .btn-v2ray {
+    background: linear-gradient(to right, #df268f, #a73178) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #df268f63;
+    margin-bottom: 16px;
+    }
+    .btn-ss {
+    background: linear-gradient(to right, #187abb, #187abb) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #3671b99a;
+    margin-bottom: 16px;
+    }
+    .btn-surge {
+    background: linear-gradient(to right, #5c97f0, #b769f3) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #8d7cfab2;
+    margin-bottom: 16px;
+    }
+    .btn-clash {
+    background: linear-gradient(to right, #49BCFC, #3B92F8) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px rgba(73, 189, 252, 0.521);
+    margin-bottom: 16px;
+    }
+    .btn-surfboard {
+    background: linear-gradient(to right, #303030, #303030) !important;
+    color: white !important;
+    border-color: transparent;
+    border: none;
+    box-shadow: 0 2px 6px #3030306e;
+    margin-bottom: 16px;
+    }
+
+.pagination-render a {
+  color: #6574f7;
+  background: #f9fafe;
+  border-radius: 3px;
+  margin: 0 3px;
+  font-weight: 600;
+  border-color: transparent;
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  line-height: 1.25;
+  border: 1px solid #f9fafe;
+}
+
+.pagination-render a:hover {
+  background-color: #6777ef;
+  color: #fff;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.pagination-render span {
+  color: #6574f7;
+  background: #f9fafe;
+  border-radius: 3px;
+  margin: 0 3px;
+  font-weight: 600;
+  border-color: transparent;
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  line-height: 1.25;
+  cursor: pointer;
+  border: 1px solid #f9fafe;
+}
+
+.pagination-render .disabled {
+  cursor: auto;
+  pointer-events: none;
+}
+
+.pagination-render .active span {
+  background-color: #6777ef;
+  color: white;
+  border-color: #6777ef;
+}
+
+@font-face {
+    font-family: 'client';
+    src:  url('/theme/metron/fonts/client/client-icons.eot?k8g547');
+    src:  url('/theme/metron/fonts/client/client-icons.eot?k8g547#iefix') format('embedded-opentype'),
+      url('/theme/metron/fonts/client/client-icons.ttf?k8g547') format('truetype'),
+      url('/theme/metron/fonts/client/client-icons.woff?k8g547') format('woff'),
+      url('/theme/metron/fonts/client/client-icons.svg?k8g547#client-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="client-"], [class*=" client-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'client' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .client-surge:before {
+    content: "\e900";
+  }
+  .client-quantumult:before {
+    content: "\e901";
+  }
+  .client-surfboard:before {
+    content: "\e902";
+  }
+  .client-shadowrocket:before {
+    content: "\e903";
+  }
+  .client-clash:before {
+    content: "\e905";
+  }
+  .client-crisp:before {
+    content: "\e906";
+  }
+  .client-mac:before {
+    content: "\e907";
+  }
+  .client-atom:before {
+    content: "\e90c";
+  }
+  .client-linux:before {
+    content: "\e90b";
+  }
+  .client-qrcode:before {
+    content: "\e908";
+  }
+  .client-wechat-pay:before {
+    content: "\e909";
+  }
+  .client-alipay:before {
+    content: "\e90a";
+  }
+  .client-finder:before {
+    content: "\e904";
+  }
+  .client-v2rayng:before {
+    content: "\e90d";
+  }
+  .client-kitsunebi:before {
+    content: "\e90e";
+  }
+  .client-ssr:before {
+    content: "\e90f";
+  }
+  .client-unionpay:before {
+    content: "\e910";
+  }
+  .client-unionpay-color .path1:before {
+    content: "\e911";
+    color: rgb(226, 24, 54);
+  }
+  .client-unionpay-color .path2:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(0, 68, 124);
+  }
+  .client-unionpay-color .path3:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(0, 123, 132);
+  }
+  .client-unionpay-color .path4:before {
+    content: "\e914";
+    margin-left: -1em;
+    color: rgb(254, 254, 254);
+  }
