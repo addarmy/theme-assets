@@ -5709,8 +5709,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-family: "summernote";
   font-style: normal;
   font-weight: normal;
-  src: url("/theme/metron/fonts/summernote/summernote.eot?1d9aeaaff0a8939558a45be6cd52cd4c");
-  src: url("/theme/metron/fonts/summernote/summernote.eot?1d9aeaaff0a8939558a45be6cd52cd4c#iefix") format("embedded-opentype"), url("/theme/metron/fonts/summernote/summernote.woff?1d9aeaaff0a8939558a45be6cd52cd4c") format("woff"), url("/theme/metron/fonts/summernote/summernote.ttf?1d9aeaaff0a8939558a45be6cd52cd4c") format("truetype"); }
+  src: url("../theme/metron/fonts/summernote/summernote.eot?1d9aeaaff0a8939558a45be6cd52cd4c");
+  src: url("../theme/metron/fonts/summernote/summernote.eot?1d9aeaaff0a8939558a45be6cd52cd4c#iefix") format("embedded-opentype"), url("../theme/metron/fonts/summernote/summernote.woff?1d9aeaaff0a8939558a45be6cd52cd4c") format("woff"), url("../theme/metron/fonts/summernote/summernote.ttf?1d9aeaaff0a8939558a45be6cd52cd4c") format("truetype"); }
 
 [class^="note-icon-"]:before, [class*=" note-icon-"]:before {
   display: inline-block;
@@ -10905,8 +10905,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
 
 @font-face {
   font-family: "socicon";
-  src: url("/theme/metron/fonts/socicon/socicon.eot");
-  src: url("/theme/metron/fonts/socicon/socicon.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/socicon/socicon.woff") format("woff"), url("/theme/metron/fonts/socicon/socicon.ttf") format("truetype"), url("/theme/metron/fonts/socicon/socicon.svg#socicon") format("svg");
+  src: url("../theme/metron/fonts/socicon/socicon.eot");
+  src: url("../theme/metron/fonts/socicon/socicon.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/socicon/socicon.woff") format("woff"), url("../theme/metron/fonts/socicon/socicon.ttf") format("truetype"), url("../theme/metron/fonts/socicon/socicon.svg#socicon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11455,15 +11455,15 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
  */
 @font-face {
   font-family: "LineAwesome";
-  src: url("/theme/metron/fonts/line-awesome/line-awesome.eot?v=1.1.");
-  src: url("/theme/metron/fonts/line-awesome/line-awesome.eot??v=1.1.#iefix") format("embedded-opentype"), url("/theme/metron/fonts/line-awesome/line-awesome.woff2?v=1.1.") format("woff2"), url("/theme/metron/fonts/line-awesome/line-awesome.woff?v=1.1.") format("woff"), url("/theme/metron/fonts/line-awesome/line-awesome.ttf?v=1.1.") format("truetype"), url("/theme/metron/fonts/line-awesome/line-awesome.svg?v=1.1.#fa") format("svg");
+  src: url("../theme/metron/fonts/line-awesome/line-awesome.eot?v=1.1.");
+  src: url("../theme/metron/fonts/line-awesome/line-awesome.eot??v=1.1.#iefix") format("embedded-opentype"), url("../theme/metron/fonts/line-awesome/line-awesome.woff2?v=1.1.") format("woff2"), url("../theme/metron/fonts/line-awesome/line-awesome.woff?v=1.1.") format("woff"), url("../theme/metron/fonts/line-awesome/line-awesome.ttf?v=1.1.") format("truetype"), url("../theme/metron/fonts/line-awesome/line-awesome.svg?v=1.1.#fa") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "LineAwesome";
-    src: url("/theme/metron/fonts/line-awesome/line-awesome.svg?v=1.1.#fa") format("svg"); } }
+    src: url("../theme/metron/fonts/line-awesome/line-awesome.svg?v=1.1.#fa") format("svg"); } }
 
 /* Thanks to http://fontawesome.io @fontawesome and @davegandy */
 .la {
@@ -13580,15 +13580,15 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
     */
 @font-face {
   font-family: "Flaticon";
-  src: url("/theme/metron/fonts/flaticon/Flaticon.eot");
-  src: url("/theme/metron/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/flaticon/Flaticon.woff") format("woff"), url("/theme/metron/fonts/flaticon/Flaticon.ttf") format("truetype"), url("/theme/metron/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  src: url("../theme/metron/fonts/flaticon/Flaticon.eot");
+  src: url("../theme/metron/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/flaticon/Flaticon.woff") format("woff"), url("../theme/metron/fonts/flaticon/Flaticon.ttf") format("truetype"), url("../theme/metron/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("/theme/metron/fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
+    src: url("../theme/metron/fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
 
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before {
@@ -14324,15 +14324,15 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
     */
 @font-face {
   font-family: "Flaticon2";
-  src: url("/theme/metron/fonts/flaticon2/Flaticon2.eot");
-  src: url("/theme/metron/fonts/flaticon2/Flaticon2.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/flaticon2/Flaticon2.woff") format("woff"), url("/theme/metron/fonts/flaticon2/Flaticon2.ttf") format("truetype"), url("/theme/metron/fonts/flaticon2/Flaticon2.svg#Flaticon2") format("svg");
+  src: url("../theme/metron/fonts/flaticon2/Flaticon2.eot");
+  src: url("../theme/metron/fonts/flaticon2/Flaticon2.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/flaticon2/Flaticon2.woff") format("woff"), url("../theme/metron/fonts/flaticon2/Flaticon2.ttf") format("truetype"), url("../theme/metron/fonts/flaticon2/Flaticon2.svg#Flaticon2") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon2";
-    src: url("/theme/metron/fonts/flaticon2/Flaticon2.svg#Flaticon2") format("svg"); } }
+    src: url("../theme/metron/fonts/flaticon2/Flaticon2.svg#Flaticon2") format("svg"); } }
 
 [class^="flaticon2-"]:before,
 [class*=" flaticon2-"]:before {
@@ -19412,8 +19412,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("/theme/metron/fonts/@fortawesome/fa-brands-400.eot");
-  src: url("/theme/metron/fonts/@fortawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/@fortawesome/fa-brands-400.woff2") format("woff2"), url("/theme/metron/fonts/@fortawesome/fa-brands-400.woff") format("woff"), url("/theme/metron/fonts/@fortawesome/fa-brands-400.ttf") format("truetype"), url("/theme/metron/fonts/@fortawesome/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../theme/metron/fonts/@fortawesome/fa-brands-400.eot");
+  src: url("../theme/metron/fonts/@fortawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/@fortawesome/fa-brands-400.woff2") format("woff2"), url("../theme/metron/fonts/@fortawesome/fa-brands-400.woff") format("woff"), url("../theme/metron/fonts/@fortawesome/fa-brands-400.ttf") format("truetype"), url("../theme/metron/fonts/@fortawesome/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: "Font Awesome 5 Brands"; }
@@ -19423,8 +19423,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/theme/metron/fonts/@fortawesome/fa-regular-400.eot");
-  src: url("/theme/metron/fonts/@fortawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/@fortawesome/fa-regular-400.woff2") format("woff2"), url("/theme/metron/fonts/@fortawesome/fa-regular-400.woff") format("woff"), url("/theme/metron/fonts/@fortawesome/fa-regular-400.ttf") format("truetype"), url("/theme/metron/fonts/@fortawesome/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../theme/metron/fonts/@fortawesome/fa-regular-400.eot");
+  src: url("../theme/metron/fonts/@fortawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/@fortawesome/fa-regular-400.woff2") format("woff2"), url("../theme/metron/fonts/@fortawesome/fa-regular-400.woff") format("woff"), url("../theme/metron/fonts/@fortawesome/fa-regular-400.ttf") format("truetype"), url("../theme/metron/fonts/@fortawesome/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-weight: 400; }
@@ -19434,8 +19434,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("/theme/metron/fonts/@fortawesome/fa-solid-900.eot");
-  src: url("/theme/metron/fonts/@fortawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/theme/metron/fonts/@fortawesome/fa-solid-900.woff2") format("woff2"), url("/theme/metron/fonts/@fortawesome/fa-solid-900.woff") format("woff"), url("/theme/metron/fonts/@fortawesome/fa-solid-900.ttf") format("truetype"), url("/theme/metron/fonts/@fortawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../theme/metron/fonts/@fortawesome/fa-solid-900.eot");
+  src: url("../theme/metron/fonts/@fortawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../theme/metron/fonts/@fortawesome/fa-solid-900.woff2") format("woff2"), url("../theme/metron/fonts/@fortawesome/fa-solid-900.woff") format("woff"), url("../theme/metron/fonts/@fortawesome/fa-solid-900.ttf") format("truetype"), url("../theme/metron/fonts/@fortawesome/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa, .far, .fas {
   font-family: "Font Awesome 5 Free"; }
