@@ -34855,11 +34855,6 @@ body {
         margin-right: 1rem; } }
 
 @media (min-width: 1025px) {
-  .body-bg {
-    background-image: url(/theme/metron/media/bg/bg-01-300.jpg);
-    background-position: center top;
-    background-size: 100% 285px;
-  }
   .kt-header {
     display: -webkit-box;
     display: -ms-flexbox;
