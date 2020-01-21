@@ -152,7 +152,7 @@
 
         // /user code
         mt_user_code: function(){
-            //充值码
+            // 充值码
             if( document.getElementById("pay_code_form") ) {
                 $().ready(function() {
                     $("#code-update").click(function () {
@@ -207,7 +207,7 @@
                     });
                 });
             };
-            //Tomato支付
+            // tomatopay支付
             if( document.getElementById("pay_tomato_amount") ) {
                 $("#tomato-alipay").click(function(){
                     var pid = 0;
@@ -317,6 +317,137 @@
                                 }
                             },
                             error: function (jqXHR) {
+                                KTApp.unblockPage();
+                                Swal.fire({ type: "error",title: '发生错误 '+ jqXHR.status });
+                            }
+                        });
+                    },1000);
+                });
+            };
+            // idtpay支付
+            if( document.getElementById("pay_idtpay_amount") ) {
+                $("#idtpay-alipay").click(function(){
+                    var pid = 0;
+                    var type = 'alipay';
+                    var price = parseFloat($("#idtpay-amount").val());
+                    var form = $(this).closest('#pay_idtpay_amount');
+                    form.validate({
+                        rules: {
+                            idtpay_amount: {
+                                required: true
+                            }
+                        },
+                        messages: {
+                            idtpay_amount: "请填写金额"
+                        },
+                        errorPlacement: function(error, element) {
+                            error.appendTo( element.parent() ); element.addClass('is-invalid');
+                            error.addClass('invalid-feedback');
+                        }
+                    });
+                    if (!form.valid()) {
+                        return;
+                    };
+                    
+                    if(isNaN(price)){
+                        Swal.fire({ type: "error",title: '非法的金额',timer: 1500,showConfirmButton: false });
+                    }
+
+                    KTApp.blockPage({
+                        overlayColor: '#000000',
+                        opacity: 0.3,
+                        type: 'v2',
+                        state: 'primary',
+                        message: '正在发起支付请求'
+                    });
+                    
+                    setTimeout(function(){
+                        $.ajax({
+                            url: "/user/payment/purchase",
+                            data: {
+                                price: price,
+                                type: type
+                            },
+                            dataType: 'json',
+                            type: "POST",
+                            success:function(data){
+                                console.log(data);
+                                if(data.errcode==-1){
+                                    KTApp.unblockPage();
+                                    Swal.fire({ type: "error",title: data.errmsg,timer: 1500,showConfirmButton: false });
+                                }
+                                if(data.errcode==0){
+                                    pid = data.pid;
+                                    $("#dialog-modal").modal();
+                                    $("#dialog-msg").html("正在跳转到支付宝..."+data.code);
+                                }
+                            },
+                            error: function (jqXHR) {
+                                console.log(jqXHR);
+                                KTApp.unblockPage();
+                                Swal.fire({ type: "error",title: '发生错误 '+ jqXHR.status });
+                            }
+                        });
+                    },1000);
+                });
+                $("#idtpay-wxpay").click(function(){
+                    var pid = 0;
+                    var type = 'wxpay';
+                    var price = parseFloat($("#idtpay-amount").val());
+                    var form = $(this).closest('#pay_idtpay_amount');
+                    form.validate({
+                        rules: {
+                            idtpay_amount: {
+                                required: true
+                            }
+                        },
+                        messages: {
+                            idtpay_amount: "请填写金额"
+                        },
+                        errorPlacement: function(error, element) {
+                            error.appendTo( element.parent() ); element.addClass('is-invalid');
+                            error.addClass('invalid-feedback');
+                        }
+                    });
+                    if (!form.valid()) {
+                        return;
+                    };
+                    
+                    if(isNaN(price)){
+                        Swal.fire({ type: "error",title: '非法的金额',timer: 1500,showConfirmButton: false });
+                    }
+
+                    KTApp.blockPage({
+                        overlayColor: '#000000',
+                        opacity: 0.3,
+                        type: 'v2',
+                        state: 'primary',
+                        message: '正在发起支付请求'
+                    });
+                    
+                    setTimeout(function(){
+                        $.ajax({
+                            url: "/user/payment/purchase",
+                            data: {
+                                price: price,
+                                type: type
+                            },
+                            dataType: 'json',
+                            type: "POST",
+                            success:function(data){
+                                console.log(data);
+                                if(data.errcode==-1){
+                                    KTApp.unblockPage();
+                                    Swal.fire({ type: "error",title: data.errmsg,timer: 1500,showConfirmButton: false });
+                                }
+                                if(data.errcode==0){
+                                    pid = data.pid;
+                                    $("#dialog-modal").modal();
+                                    $("#dialog-msg").html("正在跳转到微信支付..."+data.code);
+                                }
+                            },
+                            error: function (jqXHR) {
+                                console.log(jqXHR);
                                 KTApp.unblockPage();
                                 Swal.fire({ type: "error",title: '发生错误 '+ jqXHR.status });
                             }

@@ -48,7 +48,7 @@
         .kt-login.kt-login--v3 .kt-login__wrapper .kt-login__container .kt-form .form-control.is-invalid + .invalid-feedback {
           display: none;
           width: 100%;
-          margin-top: 0.25rem;
+          margin-top: 0rem;
           font-size: 80%;
           color: #fd397a;
           font-weight: 500;
