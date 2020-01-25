@@ -1,4 +1,4 @@
-(function($){
+﻿(function($){
     var Metron = {
         init: function(){
             var self = this;
@@ -982,7 +982,7 @@
                 url: '/user/ticket/'+tkid,
                 dataType: "json",
                 data: {
-                    content: '工单已关闭',
+                    content: '这条工单已被关闭',
                     status:status
                 },
                 success: function (data) {
@@ -1078,21 +1078,6 @@
             
         },
 
-        // 修改页面标题
-        /*mt_page_title: function(){
-            var title = document.title;
-            var subtitle = title.split('—');
-            $("#subtitle").text(subtitle[0]);
-            导航高亮
-            $("#kt_header_menu_ul .kt-menu__item").on("click",function(){
-                $(".kt-menu__item").removeClass("kt-menu__item--open");
-                $(this).addClass("kt-menu__item--open");
-            });
-             
-            $("#logo").on("click",function(){
-                $(".current").removeClass("current");
-            });
-        },*/
         // 拷贝文本
         mt_copy_text: function(){
             $(function () {
