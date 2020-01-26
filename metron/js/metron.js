@@ -53,8 +53,6 @@
 
         siteBootUp: function(){
             var self = this;
-            self.mt_user();
-            //self.mt_page_title();
             if (typeof(crisp_user_email)!='undefined') {
                 self.mt_crisp_push();
             };
@@ -74,6 +72,7 @@
             };
             if( document.getElementById("user_profile") ) {
                 self.mt_user_profile();
+                self.mt_copy_modal();
             };
             if( document.getElementById("user_ticket") ) {
                 self.mt_user_ticket();
@@ -87,11 +86,15 @@
             };
         },
 
-        //  user
-        mt_user: function(){
-
+        mt_pjax_re: function(){
+            $.pjax.reload('#kt_body', {
+                fragment: '#kt_body',
+                timeout: 8000,
+                scrollTo: false,
+            });
         },
-        //  user index
+
+        // user index
         mt_user_index: function(){
             var self = this;
             // 公告弹窗
@@ -687,10 +690,6 @@
                     }
                 });
             });
-            // telegram绑定二维码
-            jQuery('#telegram-qr').qrcode({
-                "text": 'mod://bind/'+bind_token
-            });
             // 删除账号的密码明文显示
             $('.delete_passwd-password').click(function() {
                 $('#delete_passwd-none').toggle();$('#delete_passwd-show').toggle();
@@ -1128,6 +1127,7 @@
             ["Update_Time", crisp_update_time]
             ]]]);
         },
+
         // cookie时间
         mt_setCookie: function(name, value) {
             var exp = new Date();
@@ -1139,6 +1139,7 @@
             if (arr = document.cookie.match(reg)) return unescape(arr[2]);
             else return null;
         },
+
         //购买流量叠加包
         mt_buyTrafficPackage: function(){
             if($('input[name="traffic-package-radio"]:checked').val() == null){
